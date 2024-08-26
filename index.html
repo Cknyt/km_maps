@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prueba de Mapas para Kutxa</title>
-    <link rel="stylesheet" href="https://unpkg.com/ol@7.3.0/ol.css" type="text/css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        #map {
-            width: 600px;
-            height: 400px;
-            margin: 20px auto;
-        }
-    </style>
+  <title>KB En serio KB Benetan</title>
+  <style>
+    .container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh; /* ajusta el alto del contenedor al alto de la pantalla */
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Prueba de Mapas para Kutxa</h1>
-
-    <div id="map"></div>
-    <p>Distancia recorrida: <span id="distancia">0</span> km</p>
-
-    <script src="https://unpkg.com/ol@7.3.0/dist/ol.js"></script>
-    <script src="script.js"></script> 
+  <div class="container">
+    <h1>KB En serio <br> KB Benetan</h1>
+    <div class="button-container">
+      <button><a href="eus.html">Bizkaia</button>
+      <button><a href="eus.html">Gizpuzkoa</button>
+      <button><a href="eus.html">Araba</button>
+      <button><a href="cast.html">Expansión</button>
+      <button><a href="cast.html">Córdoba</button>
+    </div>
+    <script src="script.js"></script>
+  </div>
 </body>
 </html>
