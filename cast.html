@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CASTELLANO</title>
+  <style>
+    /* Estilos para la página */
+  </style>
+</head>
+<body>
+  <h1>¿CUANTOS KILOMETROS HAS RECORRIDO HOY?</h1>
+  <form enctype="multipart/form-data">
+    <input type="number" id="kilometros" placeholder="Introduce los kilómetros" required>
+    <input type="file" id="imagen" accept="image/*">
+    <input type="submit" value="Enviar">
+  </form>
+  <button onclick="location.href='mapa.html'">Ver mapa</button>
+
+  <script>
+    // Recuperar el valor de la distancia total del almacenamiento local
+    const distanciaTotal = localStorage.getItem('distanciaTotal');
+    if (distanciaTotal) {
+      document.getElementById('kilometros').value = distanciaTotal;
+    }
+  </script>
+  <button onclick="history.back()">Volver a la página inicial</button>
+</body>
+</html>
